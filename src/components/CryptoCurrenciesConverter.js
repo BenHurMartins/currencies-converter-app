@@ -2,6 +2,7 @@ import { useState } from "react";
 import '../styles.css';
 import Selector from "./Selector";
 import { convertCurrencyCrypto } from "../api";
+import { i18n } from "../i18n";
 
 const CryptoCurrenciesConverter = (props) => {
 
@@ -39,23 +40,23 @@ const CryptoCurrenciesConverter = (props) => {
     return (
         <>
             <p className="app-subtitle">
-                Crypto to Currency
+                {i18n.cryptoCurrencySubtitle[props.lang]}
             </p>
             <div className="main-container">
                 <div className="form-container">
                     <div className="half-container">
-                        <p className="label">From:</p>
+                        <p className="label">{i18n.from[props.lang]}</p>
                         <input placeholder="0.00" min="0" value={fromValueCrypto} onChange={handleFromValueCryptoChange} />
                         <Selector value={fromCurrencyCrypto} onChange={handleFromCurrencyChangeCrypto} options={props.cryptoCurrenciesArray} currencies={props.cryptos} />
                     </div>
                     <div className="half-container">
-                        <p className="label">To:</p>
+                        <p className="label">{i18n.to[props.lang]}</p>
                         <input placeholder="0.00" value={toValueCrypto} />
                         <Selector value={toCurrencyCrypto} onChange={handleToCurrencyChangeCrypto} options={props.currenciesArray} currencies={props.currencies} />
                     </div>
                 </div>
                 <div>
-                    <button onClick={handleCryptoConversion}>Convert Crypto</button>
+                    <button onClick={handleCryptoConversion}>{i18n.cryptoCurrencyConvertButton[props.lang]}</button>
                 </div>
             </div>
         </>

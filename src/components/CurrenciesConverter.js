@@ -2,6 +2,7 @@ import { useState } from "react";
 import '../styles.css';
 import Selector from "./Selector";
 import { convertCurrency } from "../api";
+import { i18n } from "../i18n";
 
 const CurrenciesConverter = (props) => {
 
@@ -44,23 +45,23 @@ const CurrenciesConverter = (props) => {
     return (
         <>
             <p className="app-subtitle">
-                Currency
+                {i18n.currencySubtitle[props.lang]}
             </p>
             <div className="main-container">
                 <div className="form-container">
                     <div className="half-container">
-                        <p className="label">From:</p>
+                        <p className="label">{i18n.from[props.lang]}</p>
                         <input placeholder="0.00" min="0" value={fromValue} step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" onChange={handleFromValueChange} />
                         <Selector value={fromCurrency} onChange={handleFromCurrencyChange} options={props.currenciesArray} currencies={props.currencies} />
                     </div>
                     <div className="half-container">
-                        <p className="label">To:</p>
+                        <p className="label">{i18n.to[props.lang]}</p>
                         <input placeholder="0.00" value={toValue} />
                         <Selector value={toCurrency} onChange={handleToCurrencyChange} options={props.currenciesArray} currencies={props.currencies} />
                     </div>
                 </div>
                 <div>
-                    <button onClick={handleConversion}>Convert</button>
+                    <button onClick={handleConversion}>{i18n.currencyConvertButton[props.lang]}</button>
                 </div>
             </div>
         </>

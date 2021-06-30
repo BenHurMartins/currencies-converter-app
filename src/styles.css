@@ -103,3 +103,22 @@ button:active{
   background-color:white;
   color: #28a745;
 }
+
+.i18n {
+  display: flex;
+  position: absolute;
+  width: 4em;
+  justify-content: space-around;
+  top: 5px;
+  right: 5px;
+  color: white;
+}
+
+.i18n button {
+  background:none;border:none; 
+}
+.langSelected{
+  background:none;
+  border:none; 
+  color: #28a745;
+}
