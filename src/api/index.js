@@ -3,10 +3,6 @@ const LIST = 'https://api.frankfurter.app/currencies'
 const LIST_CRYPTO = 'https://data.messari.io/api/v2/assets?fields=symbol,name'
 const LATEST_CRYPTO = 'https://data.messari.io/api/v1/assets/'
 
-// I would not put this parameter in a production app, but for a challenge i believe it is ok
-export const key = 'ed22077e84cdd74b569cd87b51005f1c'
-
-
 export const getCryptoCurrencies = async () => {
     return new Promise(
         (resolve, reject) => {

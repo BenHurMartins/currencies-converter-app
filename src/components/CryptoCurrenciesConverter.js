@@ -46,12 +46,12 @@ const CryptoCurrenciesConverter = (props) => {
                 <div className="form-container">
                     <div className="half-container">
                         <p className="label">{i18n.from[props.lang]}</p>
-                        <input placeholder="0.00" min="0" value={fromValueCrypto} onChange={handleFromValueCryptoChange} />
+                        <input className="input-from" placeholder="0.00" min="0" value={fromValueCrypto} onChange={handleFromValueCryptoChange} />
                         <Selector value={fromCurrencyCrypto} onChange={handleFromCurrencyChangeCrypto} options={props.cryptoCurrenciesArray} currencies={props.cryptos} />
                     </div>
                     <div className="half-container">
                         <p className="label">{i18n.to[props.lang]}</p>
-                        <input placeholder="0.00" value={toValueCrypto} />
+                        <input className="input-to" placeholder="0.00" value={toValueCrypto} />
                         <Selector value={toCurrencyCrypto} onChange={handleToCurrencyChangeCrypto} options={props.currenciesArray} currencies={props.currencies} />
                     </div>
                 </div>
