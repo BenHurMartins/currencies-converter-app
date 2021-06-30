@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Selector.js correctly 1`] = `
+<select
+  onChange={[Function]}
+  value="USD"
+>
+  <option
+    value="USD"
+  >
+    United States Dolar
+  </option>
+  <option
+    value="BRL"
+  >
+    Brazilian Real
+  </option>
+</select>
+`;

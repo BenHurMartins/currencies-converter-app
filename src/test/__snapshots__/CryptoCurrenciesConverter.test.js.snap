@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CryptoCurrencyConverter should render the component 1`] = `
+Array [
+  <p
+    className="app-subtitle"
+  >
+    Crypto Currency
+  </p>,
+  <div
+    className="main-container"
+  >
+    <div
+      className="form-container"
+    >
+      <div
+        className="half-container"
+      >
+        <p
+          className="label"
+        >
+          From:
+        </p>
+        <input
+          className="input-from"
+          min="0"
+          onChange={[Function]}
+          placeholder="0.00"
+          value={0}
+        />
+        <select
+          onChange={[Function]}
+          value="BTC"
+        >
+          <option
+            value="BTC"
+          >
+            Bitcoin
+          </option>
+          <option
+            value="ETH"
+          >
+            Ethereum
+          </option>
+        </select>
+      </div>
+      <div
+        className="half-container"
+      >
+        <p
+          className="label"
+        >
+          To:
+        </p>
+        <input
+          className="input-to"
+          placeholder="0.00"
+          value={0}
+        />
+        <select
+          onChange={[Function]}
+          value="USD"
+        >
+          <option
+            value="USD"
+          >
+            United States Dolar
+          </option>
+          <option
+            value="BRL"
+          >
+            Brazilian Real
+          </option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        Convert Crypto
+      </button>
+    </div>
+  </div>,
+]
+`;

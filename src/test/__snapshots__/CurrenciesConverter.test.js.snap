@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrencyConverter should render the component 1`] = `
+Array [
+  <p
+    className="app-subtitle"
+  >
+    Currency
+  </p>,
+  <div
+    className="main-container"
+  >
+    <div
+      className="form-container"
+    >
+      <div
+        className="half-container"
+      >
+        <p
+          className="label"
+        >
+          From:
+        </p>
+        <input
+          min="0"
+          onChange={[Function]}
+          pattern="^\\\\d+(?:\\\\.\\\\d{1,2})?$"
+          placeholder="0.00"
+          step="0.01"
+          title="Currency"
+          value={0}
+        />
+        <select
+          onChange={[Function]}
+          value="USD"
+        >
+          <option
+            value="USD"
+          >
+            United States Dolar
+          </option>
+          <option
+            value="BRL"
+          >
+            Brazilian Real
+          </option>
+        </select>
+      </div>
+      <div
+        className="half-container"
+      >
+        <p
+          className="label"
+        >
+          To:
+        </p>
+        <input
+          placeholder="0.00"
+          value={0}
+        />
+        <select
+          onChange={[Function]}
+          value="EUR"
+        >
+          <option
+            value="USD"
+          >
+            United States Dolar
+          </option>
+          <option
+            value="BRL"
+          >
+            Brazilian Real
+          </option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        Convert
+      </button>
+    </div>
+  </div>,
+]
+`;
